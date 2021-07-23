@@ -1,0 +1,188 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TTP_HRMS.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
+    <title>TTP - HRMS Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="../Scripts/jquery-3.4.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+
+    <link href="../Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+    <link href="../Content/simple-sidebar.css" rel="stylesheet">
+    <link href="../wwwroot/css/fontawesome/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .bodycss {
+            background: #32516F;
+            background: -webkit-linear-gradient(top, #32516F, #76B1E8);
+            background: -moz-linear-gradient(top, #32516F, #76B1E8);
+            background: linear-gradient(to bottom, #32516F, #76B1E8);
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+<body>
+    <form runat="server" autocomplete="off">
+        <asp:ScriptManager runat="server" EnablePageMethods="true">
+        </asp:ScriptManager>
+        <asp:Label ID="lblMsg" runat="server" Visible="false"></asp:Label>
+
+        <nav class="navbar navbar-default no-margin navbar-fixed-top">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header fixed-brand" style="background-color: #f7ad6c; height: 60px;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" id="menu-toggle">
+                    <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                </button>
+                <a class="navbar-brand" href="#"><%--<i class="fa fa-rocket fa-4"></i>--%><img src="../img/logo.png" alt="" height="40px" width="150px" /></a>
+            </div>
+            <!-- navbar-header-->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background: #2e6da4;">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></button>
+                    </li>
+                    <%--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <asp:Label ID="lblname" runat="server" Style="font-size: 13px; font-family: Arial; text-transform: uppercase; color: white;"></asp:Label>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ChangePwd.aspx" style="font-size: 13px; font-family: Arial;">Change Password</a></li>
+                            <li><a href="Login.aspx" style="font-size: 13px; font-family: Arial;">Logout</a></li>
+                        </ul>
+                    </li>--%>
+                </ul>
+                <div style="border: solid 0px red; float: right; margin-right: 200px;">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <asp:Label ID="lblname" runat="server" Style="font-size: 13px; font-family: Arial; text-transform: uppercase; color: white;"></asp:Label>
+
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- bs-example-navbar-collapse-1 -->
+
+
+        </nav>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+                    <li class="active">
+                        <a href="Dashboard.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x"></i></span>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-file-text fa-stack-1x "></i></span>Request<span class="caret" style="margin-left: 100px;"></span></a>
+                        <ul class="nav-pills nav-stacked" style="list-style-type: none;">
+                            <li id="LR" runat="server"><a href="LeaveView.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-file-text fa-stack-1x "></i></span>Leave</a></li>
+                            <li id="TR" runat="server"><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-file-text fa-stack-1x "></i></span>Timesheet</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-comments fa-stack-1x "></i></span>Approval<span class="caret" style="margin-left: 100px;"></span></a>
+                        <ul class="nav-pills nav-stacked" style="list-style-type: none;">
+                            <li id="LA" runat="server"><a href="LeaveApproval.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-file-text fa-stack-1x "></i></span>Leave</a></li>
+                            <li id="TA" runat="server"><a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-file-text fa-stack-1x "></i></span>Timesheet</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="EmployeeProfile.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-user fa-stack-1x "></i></span>Profile</a>
+                    </li>
+                    <li>
+                        <a href="ChangePassword.aspx"><span class="fa-stack fa-lg pull-left"><i class="fa fa-eye fa-stack-1x "></i></span>Change Password</a>
+                    </li>
+                    <li>
+                        <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa-stack fa-lg pull-left"><i class="fa fa-power-off fa-stack-1x "></i></span>SignOut</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+            <!-- Page Content -->
+            <div id="page-content-wrapper" class="bodycss">
+                <div class="container-fluid xyz">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="container-fluid body-content">
+                                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                </asp:ContentPlaceHolder>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer style="font-family: Helvetica,Arial,Verdana,sans-serif; bottom: 0px; font-size: 12px; text-align: center; height: 40px; background: #2e6da4;">
+                    <div style="margin-top: 10px; position: relative;">
+                        <strong>Copyright &copy; <a href="http://trustechprof.com/" target="_blank" style="color: white;">Trusted Technology Professionals FZ LLE</a>.</strong> All rights reserved.Version 1.0.0
+                    </div>
+                </footer>
+            </div>
+            <!-- /#page-content-wrapper -->
+        </div>
+
+          <!-- MESSAGE BOX-->
+        <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+            <div class="mb-container">
+                <div class="mb-middle">
+                    <div class="mb-title"><span class="fa fa-sign-out"></span>Log <strong>Out</strong> ?</div>
+                    <div class="mb-content">
+                        <p>Are you sure you want to log out?</p>
+                        <p>Press Yes to exit the application, No to continue the session</p>
+                    </div>
+                    <div class="mb-footer">
+                        <div class="pull-right">
+                            <a href="Login.aspx" class="btn btn-primary btn-lg">Yes</a>
+                            <button class="btn btn-default btn-lg mb-control-close">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MESSAGE BOX-->
+    </form>
+    <script src="../Scripts/sidebar_menu.js"></script>
+    <script>
+        /* MESSAGE BOX */
+        $(".mb-control").on("click", function () {
+            var box = $($(this).data("box"));
+            if (box.length > 0) {
+                box.toggleClass("open");
+
+                var sound = box.data("sound");
+
+                if (sound === 'alert')
+                    playAudio('alert');
+
+                if (sound === 'fail')
+                    playAudio('fail');
+
+            }
+            return false;
+        });
+        $(".mb-control-close").on("click", function () {
+            $(this).parents(".message-box").removeClass("open");
+            return false;
+        });
+    /* END MESSAGE BOX */
+    </script>
+</body>
+</html>

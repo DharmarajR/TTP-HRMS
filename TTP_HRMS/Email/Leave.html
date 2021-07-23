@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        .style14 {
+            width: 107px;
+            font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <style type="text/css">
+        #customers {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #customers td, #customers th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #customers tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #customers tr:hover {
+                background-color: #ddd;
+            }
+
+            #customers th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+
+        .auto-style1 {
+            width: 126px;
+            font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+        }
+
+        .auto-style2 {
+            width: 126px;
+        }
+
+        .auto-style3 {
+            width: 135px;
+            font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <meta content="text/html charset=UTF-8" http-equiv="Content-Type" />
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center">
+                <table style="font-family: Trebuchet MS, Arial, Helvetica, sans-serif; border-collapse: collapse; width: 75%;">
+
+                    <tr>
+                        <td colspan="4">
+                            <span style="color: #C8040E; font: normal 9pt Verdana, Helvetica, sans-serif;">Leave Details</span>
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <p align="left">
+                                <span class="style14">
+                                    Dear $$EmpName$$,
+                                    <br />
+                                    <br />
+                                    Please note that $$Messages$$ an $$LeaveType1$$ from $$fromdate$$ to $$todate$$ ($$days$$ Days).<br />
+                                    $$Approval$$
+
+                                    <br />
+                                    <br />
+                                    <a class="style14" style="text-decoration: underline; font-weight: bold;">Leave Request: </a>
+                                    <br />
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style1">
+                            Document Number :
+                        </td>
+                        <td class="style14">
+                            $$DocNo$$
+                        </td>
+                        <td class="auto-style3"></td>
+                        <td class="style14"></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style1">
+                            Employee Code :
+                        </td>
+                        <td class="style14">
+                            $$EmpCode$$
+                        </td>
+                        <td class="auto-style3">
+                            Employee Name :
+                        </td>
+                        <td class="style14">
+                            $$ReqEmpName1$$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style1">
+                            Leave Type :
+                        </td>
+                        <td class="style14">
+                            $$LeaveType$$
+                        </td>
+                        <td class="auto-style3">
+                            Leave Balance :
+                        </td>
+                        <td class="style14">
+                            $$LveBalance$$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style1">
+                            From Date :
+                        </td>
+                        <td class="style14">
+                            $$Fromdt$$
+                        </td>
+                        <td class="auto-style3">
+                            To Date :
+                        </td>
+                        <td class="style14">
+                            $$Todate$$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3">
+                            No.of Days :
+                        </td>
+                        <td class="style14">
+                            $$Noofdays$$
+                        </td>
+                        <td class="auto-style1">
+                            Reason :
+                        </td>
+                        <td class="style14">
+                            $$Reason$$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3">
+                            Contact Address :
+                        </td>
+                        <td class="style14">
+                            $$ContAddress$$
+                        </td>
+                        <td class="auto-style1">
+                            Phone No. :
+                        </td>
+                        <td class="style14">
+                            $$PhoneNo$$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3">
+                            Approval Status :
+                        </td>
+                        <td class="style14">
+                            $$status$$
+                        </td>
+                    </tr>                   
+
+                    <tr>
+                        <td class="auto-style1">
+                            <br />
+                            <br />
+                            <br />
+                            Thanks &amp; Regards,
+                            <br />
+                            <br />
+                            $$ReqEmpName$$
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <br />
+                            <br />
+                            <br />
+                            <p align="center" style="font-family: 'Arial Narrow'; font-size: xx-small; height: 57px; color: #808080;">
+                                <br />
+                                This is an auto-generated mail, please do not reply this mail id..!!
+                                <br />
+                                Powered by SAP Business One ERP
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTP_HRMS", "TTP_HRMS\TTP_HRMS.csproj", "{743849C0-2516-40C2-A76D-3A54C0980B13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTP_HRMS.Entities", "TTP_HRMS.Entities\TTP_HRMS.Entities.csproj", "{EF64A05D-28F6-4148-90C3-49A3BBF787A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{743849C0-2516-40C2-A76D-3A54C0980B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743849C0-2516-40C2-A76D-3A54C0980B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743849C0-2516-40C2-A76D-3A54C0980B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743849C0-2516-40C2-A76D-3A54C0980B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF64A05D-28F6-4148-90C3-49A3BBF787A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF64A05D-28F6-4148-90C3-49A3BBF787A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF64A05D-28F6-4148-90C3-49A3BBF787A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF64A05D-28F6-4148-90C3-49A3BBF787A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDF9173D-241B-4919-B753-AA868E76DCE9}
+	EndGlobalSection
+EndGlobal

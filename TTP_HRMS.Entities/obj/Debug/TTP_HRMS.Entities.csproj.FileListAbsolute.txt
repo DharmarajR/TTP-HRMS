@@ -1,0 +1,8 @@
+E:\Projects\George\Web Developments\TTP HRMS\TTP_HRMS\TTP_HRMS.Entities\bin\Debug\TTP_HRMS.Entities.dll
+E:\Projects\George\Web Developments\TTP HRMS\TTP_HRMS\TTP_HRMS.Entities\bin\Debug\TTP_HRMS.Entities.pdb
+E:\Projects\George\Web Developments\TTP HRMS\TTP_HRMS\TTP_HRMS.Entities\obj\Debug\TTP_HRMS.Entities.csproj.AssemblyReference.cache
+E:\Projects\George\Web Developments\TTP HRMS\TTP_HRMS\TTP_HRMS.Entities\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Projects\George\Web Developments\TTP HRMS\TTP_HRMS\TTP_HRMS.Entities\obj\Debug\TTP_HRMS.Entities.csproj.ResolveComReference.cache
+E:\Projects\George\Web Developments\TTP HRMS\TTP_HRMS\TTP_HRMS.Entities\obj\Debug\TTP_HRMS.Entities.csproj.CoreCompileInputs.cache
+E:\Projects\George\Web Developments\TTP HRMS\TTP_HRMS\TTP_HRMS.Entities\obj\Debug\TTP_HRMS.Entities.dll
+E:\Projects\George\Web Developments\TTP HRMS\TTP_HRMS\TTP_HRMS.Entities\obj\Debug\TTP_HRMS.Entities.pdb
